@@ -11,7 +11,7 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
+ 
   gtag('config', 'G-SN2ZHELMV2');
 </script>
 </head>
@@ -21,15 +21,25 @@
         <h1>Топ фільмів для перегляду</h1>
         <nav>
             <ul>
+                <li><a href="#home">Головна</a></li>
                 <li><a href="#popular">Популярні фільми</a></li>
                 <li><a href="#family">Сімейні фільми</a></li>
                 <li><a href="#thriller">Трилери</a></li>
                 <li><a href="#comedy">Комедії</a></li>
             </ul>
         </nav>
+        <button aria-label="Поділитися цією сторінкою" class="share-btn" onclick="sharePage()">
+            Поділитися
+        </button>
     </header>
  
     <main>
+ 
+        <section id="home">
+            <h2>Доброго ранку, дня або вечора</h2>
+            <p>Цей проєкт був зроблений для виконання домашнього завдання у школі JustSchool.</p>
+            <p>За допомогою кнопок з верху ви можете перейти до розділів з фільмами.</p>
+        </section>
  
         <section id="popular">
             <h2>Популярні фільми</h2>
@@ -51,7 +61,7 @@
             <h2>Сімейні фільми</h2>
  
             <article>
-                <h3>Історі"
+                <h3>Історія іграшок</h3>
                 <p>Анімаційна пригода про дружбу іграшок, які оживають.</p>
                 <p>Жанр: Анімація</p>
             </article>
@@ -102,6 +112,8 @@
         <br>
         <p>Виконав Михайло для школи JustSchool</p>
     </footer>
+ 
+    <script src="script.js"></script>
  
 </body>
 </html>

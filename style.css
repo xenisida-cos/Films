@@ -2,36 +2,108 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f4f1ea;
+    color: #333;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
  
 header {
     background-color: #3E4E50;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 25px 10px;
+}
+ 
+header h1 {
+    margin: 0 0 15px 0;
 }
  
 header ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
  
 header li {
-    display: inline;
-    margin-right: 10px;
+    display: inline-block;
+    margin: 0 5px;
 }
  
 header a {
     text-decoration: none;
     color: white;
+    background-color: #56696c;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+ 
+header a:hover {
+    background-color: #6d8386;
+}
+ 
+header nav a.active {
+    background-color: #e8a33d;
+    color: #3E4E50;
+    font-weight: bold;
+}
+ 
+.share-btn {
+    margin-top: 15px;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #3E4E50;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+ 
+.share-btn:hover {
+    background-color: #e8a33d;
+    color: white;
 }
  
 section {
-    margin: 20px;
-    padding: 15px;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 20px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+ 
+section.active {
+    display: block;
+}
+ 
+section h2 {
+    margin-top: 0;
+    color: #3E4E50;
+    border-bottom: 2px solid #e8a33d;
+    padding-bottom: 8px;
+}
+ 
+article {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+ 
+article:last-child {
+    border-bottom: none;
+}
+ 
+article h3 {
+    margin: 0 0 5px 0;
+}
+ 
+article p {
+    margin: 3px 0;
+    color: #555;
 }
  
 img {
@@ -39,11 +111,14 @@ img {
     margin: 10px;
     border-radius: 5px;
 }
- 
-/* Підвал сайту */
+
 footer {
     text-align: center;
     background-color: #333;
     color: white;
     padding: 10px;
+}
+
+main {
+    flex: 1;
 }
